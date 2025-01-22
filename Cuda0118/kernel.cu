@@ -1,5 +1,4 @@
-﻿
-#include <cuda_runtime.h>
+﻿#include <cuda_runtime.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -115,7 +114,6 @@ void parallelGroupStrings(
     delete[] counting;
 }
 
-
 /* Define the maximum size of alphabet */
 #define MAX_ALPHABET_SIZE 255
 /* Define boolean values */
@@ -215,8 +213,6 @@ int main(int argc, char** argv)
             printf("ERROR: Cannot read the pattern file (\"%s\").\n", argv[2]);
             return 0;
         }
-
-
 
         /* Note that the format of patterns is described as follows:
             * The first line is the total number of patterns.
